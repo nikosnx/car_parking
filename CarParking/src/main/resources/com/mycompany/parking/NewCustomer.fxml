@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.parking.NewCustController">
+    <children>
+        <Label prefHeight="22.0" prefWidth="146.0" text="ΝΕΟΣ ΠΕΛΑΤΗΣ">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="10.0" prefWidth="110.39998779296874" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="112.00001220703123" minWidth="10.0" prefWidth="104.00001220703123" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="112.00001220703123" minWidth="10.0" prefWidth="104.00001220703123" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="111.79998779296875" minWidth="10.0" prefWidth="111.79998779296875" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="33.60000801086426" minHeight="9.599981212615965" prefHeight="29.600006103515625" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="51.20001878738403" minHeight="10.0" prefHeight="31.999993896484376" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="name" prefHeight="26.0" prefWidth="129.0" GridPane.rowIndex="1" />
+            <TextField fx:id="at" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="phone" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <TextField fx:id="ak" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <TextField fx:id="ix" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Label fx:id="aki" prefHeight="22.0" prefWidth="146.0" text="Αριθμ. Κυκλοφορίας" textAlignment="CENTER" textFill="#2138ff" GridPane.columnIndex="4">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label prefHeight="22.0" prefWidth="125.0" text="Ονοματεπώνυμο" textAlignment="CENTER" textFill="#2138ff">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label prefHeight="22.0" prefWidth="146.0" text="Τηλέφωνο" textAlignment="CENTER" textFill="#2138ff" GridPane.columnIndex="3">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label prefHeight="22.0" prefWidth="146.0" text="ΑΤ" textAlignment="CENTER" textFill="#2138ff" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label prefHeight="22.0" prefWidth="146.0" text="Όχημα" textAlignment="CENTER" textFill="#2138ff" GridPane.columnIndex="5">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="email" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label prefHeight="22.0" prefWidth="109.0" text="Email" textAlignment="CENTER" textFill="#2138ff" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+              <Button fx:id="returnBtn" onAction="#goToState" text="Πίσω" />
+          <Button fx:id="insert" mnemonicParsing="false" onAction="#insertNewCustomer" text="Καταχώρηση" />
+        </buttons>
+      </ButtonBar>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
